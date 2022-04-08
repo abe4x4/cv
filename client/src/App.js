@@ -27,7 +27,7 @@ function App() {
 export default App;
 
 export function ProtectedRoute(props) {
-  if (localStorage.getItem("sheyresume-user")) {
+  if (localStorage.getItem("abecv-user")) {
     return props.children;
   } else {
     return <Navigate to="/login" />;

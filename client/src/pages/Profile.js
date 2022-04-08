@@ -9,7 +9,7 @@ import axios from "axios";
 const { TabPane } = Tabs;
 function Profile() {
   const [loading, setLoading] = useState(false);
-  const user = JSON.parse(localStorage.getItem("sheyresume-user"));
+  const user = JSON.parse(localStorage.getItem("abecv-user"));
   const onFinish = async (values) => {
     setLoading(true);
     try {
@@ -17,7 +17,7 @@ function Profile() {
         ...values,
         _id: user._id,
       });
-      localStorage.setItem("sheyresume-user", JSON.stringify(result.data));
+      localStorage.setItem("abecv-user", JSON.stringify(result.data));
       setLoading(false);
       message.success("Profile updated successfully");
     } catch (error) {

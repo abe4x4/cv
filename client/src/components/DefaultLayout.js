@@ -3,8 +3,9 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./../resources/defaultlayout.css";
 import { UserOutlined  } from "@ant-design/icons";
+
 function DefaultLayout(props) {
-  const user = JSON.parse(localStorage.getItem("sheyresume-user"));
+  const user = JSON.parse(localStorage.getItem("abecv-user"));
   const navigate = useNavigate();
   const menu = (
     <Menu>
@@ -16,7 +17,7 @@ function DefaultLayout(props) {
       </Menu.Item>
       <Menu.Item
         onClick={() => {
-          localStorage.removeItem("sheyresume-user");
+          localStorage.removeItem("abecv-user");
           navigate("/login");
         }}
       >
@@ -27,7 +28,7 @@ function DefaultLayout(props) {
   return (
     <div className="layout">
       <div className="header">
-        <h1 onClick={()=>navigate('/home')} style={{cursor:'pointer'}}>SHEY CV</h1>
+        <h1 onClick={()=>navigate('/home')} style={{cursor:'pointer'}}>ABE CV</h1>
         <Dropdown overlay={menu} placement="bottomLeft">
           <Button icon={<UserOutlined />}>{user.username}</Button>
         </Dropdown>

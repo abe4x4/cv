@@ -21,7 +21,7 @@ function Register() {
   };
 
   useEffect(()=>{
-    if(localStorage.getItem('sheyresume-user'))
+    if(localStorage.getItem('abecv-user'))
     {
       navigate('/home')
     }
