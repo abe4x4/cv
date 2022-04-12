@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Form, Input, Button, Checkbox, message, Spin } from "antd";
+import { Form, Input, Button, message, Spin } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import "../resources/authentication.css";
 import axios from "axios";
@@ -11,7 +11,7 @@ function Register() {
     try {
       const user = await axios.post("api/user/login", values);
       message.success("Login successfull");
-      localStorage.setItem("sheyresume-user", JSON.stringify(user.data));
+      localStorage.setItem("abecv-user", JSON.stringify(user.data));
       setLoading(false)
       navigate('/home')
     } catch (error) {
@@ -30,7 +30,7 @@ function Register() {
   return (
     <div className="auth-parent">
       {loading && <Spin size="large"/>}
-      <h1 className="brand">Ibrahim's CV</h1>
+      <h1 className="brand"></h1>
       <Form layout="vertical" onFinish={onFinish}>
         <h1>Login</h1>
         <hr />

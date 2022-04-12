@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Button, Space } from "antd";
+import { Form, Input, Button } from "antd";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 function SkillsEducation() {
   return (
@@ -16,7 +16,7 @@ function SkillsEducation() {
                   <Form.Item
                     {...restField}
                     name={[name, "qualification"]}
-                    rules={[{ required: true, message: "Missing first name" }]}
+                    rules={[{ required: true, message: "Missing qualification" }]}
                   >
                     <Input placeholder="Qualification" />
                   </Form.Item>
@@ -26,7 +26,7 @@ function SkillsEducation() {
                   <Form.Item
                     {...restField}
                     name={[name, "percentage"]}
-                    rules={[{ required: true, message: "Missing first name" }]}
+                    rules={[{ required: true, message: "Missing percentage" }]}
                   >
                     <Input placeholder="Percentage" />
                   </Form.Item>
@@ -36,7 +36,7 @@ function SkillsEducation() {
                   <Form.Item
                     {...restField}
                     name={[name, "institution"]}
-                    rules={[{ required: true, message: "Missing first name" }]}
+                    rules={[{ required: true, message: "Missing inistitution" }]}
                   >
                     <Input placeholder="Institution" />
                   </Form.Item>
@@ -45,7 +45,7 @@ function SkillsEducation() {
                   <Form.Item
                     {...restField}
                     name={[name, "range"]}
-                    rules={[{ required: true, message: "Missing first name" }]}
+                    rules={[{ required: true, message: "Missing range" }]}
                   >
                     <Input placeholder="Year Range" />
                   </Form.Item>
@@ -82,7 +82,7 @@ function SkillsEducation() {
                   <Form.Item
                     {...restField}
                     name={[name, "technology"]}
-                    rules={[{ required: true, message: "Missing first name" }]}
+                    rules={[{ required: true, message: "Missing technology" }]}
                   >
                     <Input placeholder="Technology" />
                   </Form.Item>
@@ -92,7 +92,7 @@ function SkillsEducation() {
                   <Form.Item
                     {...restField}
                     name={[name, "rating"]}
-                    rules={[{ required: true, message: "Missing first name" }]}
+                    rules={[{ required: true, message: "Missing rating" }]}
                   >
                     <Input placeholder="Rating" />
                   </Form.Item>
