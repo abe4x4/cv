@@ -9,20 +9,18 @@ function DefaultLayout(props) {
   const navigate = useNavigate();
   const menu = (
     <Menu>
-      <Menu.Item>
-      <Link to="/home">Home</Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link to="/profile">Profile</Link>
-      </Menu.Item>
-      <Menu.Item
-        onClick={() => {
-          localStorage.removeItem("abecv-user");
-          navigate("/login");
-        }}
-      >
-        <span>Logout</span>
-      </Menu.Item>
+        <Menu.Item>
+            <Link to="/home">Home</Link>
+        </Menu.Item>
+        <Menu.Item>
+            <Link to="/profile">Profile</Link>
+        </Menu.Item>
+        <Menu.Item onClick={() => {
+             localStorage.removeItem("abecv-user");
+             navigate("/login");
+        }} >
+          <span>Logout</span>
+        </Menu.Item>
     </Menu>
   );
   return (

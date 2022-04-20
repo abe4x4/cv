@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Form, Input, Button, Checkbox, message, Spin } from "antd";
+import { Form, Input, Button, message, Spin } from "antd";
 import "../resources/authentication.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -29,7 +29,7 @@ function Register() {
 
   return (
     <div className="auth-parent">
-       <h1 className="brand">Ibrahim's CV</h1>
+       <h1 className="brand"></h1>
       {loading && (<Spin size="large"/>)}
       <Form layout="vertical" onFinish={onFinish}>
         <h1>Register</h1>
